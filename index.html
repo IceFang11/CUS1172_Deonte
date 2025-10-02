@@ -1,83 +1,123 @@
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment Submission Cover Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            line-height: 1.6;
-        }
-        h1, h2 {
-            text-align: center;
-        }
-        .section {
-            margin-bottom: 20px;
-        }
-        .label {
-            font-weight: bold;
-        }
-        .declaration {
-            border-top: 2px solid #000;
-            padding-top: 15px;
-            margin-top: 20px;
-        }
-        iframe {
-            display: block;
-            margin: 15px auto;
-            width: 560px;
-            height: 315px;
-            border: none;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment Submission Cover Page</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Your custom CSS -->
+  <link rel="stylesheet" href="css/mycss_web.css">
+  <link rel="stylesheet" href="css/mycss_tablet.css">
+  <link rel="stylesheet" href="css/mycss_print.css" media="print">
 </head>
-<body>
-    <h1>CUS 1172 – Web Application Development</h1>
-    <h2>Assignment Submission Cover Page</h2>
+<body class="bg-light">
 
-    <div class="section">
-        <p><span class="label">Student Name:</span> Deonte Newland</p>
-        <p><span class="label">Assignment:</span> Assignment 01 – Milestone 02</p>
-        <p><span class="label">Major:</span> Information Technology</p>
-        <p><span class="label">Education summary:</span> Highschool Diploma</p>
-        <p><span class="label">Work Experience:</span> Home Health Aid</p>
-        <p><span class="label">Programing Skills:</span> Very little experience with Java</p>
-        <p><span class="label">General Interests:</span> I like working with computer hardware</p>
-        <p><span class="label">Favorite Movies:</span> I have two favorite movies Pacific Rim and How to Train Your Dragon</p>
-        
-        <!-- YouTube embed instead of <video> -->
-        <iframe src="https://www.youtube.com/embed/dLptjP1RKmQ" allowfullscreen></iframe>
-        <iframe src="https://www.youtube.com/embed/ZDyEERuK31Y" allowfullscreen></iframe>
-        
-        <p><span class="label">My Projects in this course:</span> 
-           <a href="https://stjohns.instructure.com/courses/93666/assignments/700735" target="_blank">
-               https://stjohns.instructure.com/courses/93666/assignments/700735
-           </a>
-        </p>
+  <!-- Navbar (Bootstrap element #1) -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">CUS 1172</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#github">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Title -->
+  <header class="text-center my-4">
+    <h1 class="display-5 fw-bold">CUS 1172 – Web Application Development</h1>
+    <h2 class="text-muted">Assignment Submission Cover Page</h2>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <!-- Profile Card (Bootstrap element #2: Card) -->
+      <div class="col-md-6">
+        <div class="card mb-4 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Student Information</h5>
+            <p><span class="fw-bold">Name:</span> Deonte Newland</p>
+            <p><span class="fw-bold">Assignment:</span> Assignment 01 – Milestone 03</p>
+            <p><span class="fw-bold">Major:</span> Information Technology</p>
+            <p><span class="fw-bold">Education:</span> Highschool Diploma</p>
+            <p><span class="fw-bold">Work Experience:</span> Home Health Aid</p>
+            <p><span class="fw-bold">Programming Skills:</span> Beginner in Java</p>
+            <p><span class="fw-bold">General Interests:</span> Computer Hardware</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Movies Card (Bootstrap element #3: Card + List group) -->
+      <div class="col-md-6">
+        <div class="card mb-4 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Favorite Movies</h5>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Pacific Rim</li>
+              <li class="list-group-item">How to Train Your Dragon</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div class="section">
-        <p><span class="label">GitHub Repository:</span> 
-           <a href="https://github.com/IceFang11/CUS1172_Deonte/blob/main/milestone1/index.html" target="_blank">
-               https://github.com/IceFang11/CUS1172_Deonte/blob/main/milestone1/index.html
-           </a>
-        </p>
-        <p>Provide the URL to the GitHub Repository that hosts your assignment – provide a direct link to the subfolder that stores your deliverable (if not the root folder).</p>
-        <p><em>Format:</em> <code>https://github.com/&lt;account-name&gt;/&lt;repository-name&gt;</code></p>
+    <!-- Videos (Bootstrap element #4: Responsive Ratio) -->
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/dLptjP1RKmQ" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="col-md-6 mb-3">
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/ZDyEERuK31Y" allowfullscreen></iframe>
+        </div>
+      </div>
     </div>
 
-    <div class="section">
-        <p><span class="label">Deployment URL:</span> 
-           <a href="https://icefang11.github.io/CUS1172_Deonte/" target="_blank">
-               https://icefang11.github.io/CUS1172_Deonte/
-           </a>
-        </p>
+    <!-- Projects and Links (Bootstrap element #5: Buttons, Table) -->
+    <div class="row" id="projects">
+      <div class="col-md-12">
+        <h3>My Projects in this Course</h3>
+        <a href="https://stjohns.instructure.com/courses/93666/assignments/700735" 
+           class="btn btn-primary mb-3" target="_blank">View Project on Canvas</a>
+      </div>
     </div>
 
-    <div class="section declaration">
-        <p><span class="label">Declaration of Own Work:</span></p>
-        <p>By submitting this cover page, I certify that all assignments/projects/reports/deliverables/code referenced herein is my own work, based on my personal study and/or research and that I have acknowledged all materials and sources used in its submission. I also certify that these assignments/projects/reports/deliverables/code have not previously been submitted for assessment at this course or elsewhere and that I have not copied in part or whole or otherwise plagiarized the work of other students and/or persons.</p>
+    <div class="row" id="github">
+      <div class="col-md-12">
+        <h3>Repository and Deployment</h3>
+        <table class="table table-bordered">
+          <tr>
+            <th>GitHub Repository</th>
+            <td><a href="https://github.com/IceFang11/CUS1172_Deonte" target="_blank">
+              https://github.com/IceFang11/CUS1172_Deonte</a></td>
+          </tr>
+          <tr>
+            <th>Deployment URL</th>
+            <td><a href="https://icefang11.github.io/CUS1172_Deonte/" target="_blank">
+              https://icefang11.github.io/CUS1172_Deonte/</a></td>
+          </tr>
+        </table>
+      </div>
     </div>
+
+    <!-- Declaration (Bootstrap element #6: Alert) -->
+    <div class="alert alert-info mt-4" role="alert">
+      <h5>Declaration of Own Work</h5>
+      <p>By submitting this cover page, I certify that all assignments/projects/reports/deliverables/code referenced herein is my own work, based on my personal study and/or research and that I have acknowledged all materials and sources used in its submission. I also certify that these assignments/projects/reports/deliverables/code have not previously been submitted for assessment at this course or elsewhere and that I have not copied in part or whole or otherwise plagiarized the work of other students and/or persons.</p>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
